@@ -1,0 +1,12 @@
+import random 
+
+lowercase=("abcdefghijklmnopqrstuvxyz")
+uppercase=("ABCDEFGHIJKLMNOPQRSTUVXYZ")
+number=("0123456789")
+symbol="#$%^&*!@*"
+x=lowercase+uppercase+number +symbol
+password=""
+length=25
+for i in range(length):
+    password=''.join([password,random.choice(x)])
+print(password)
